@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 85, in script
+  File "game/script.rpy", line 85, in python
+AttributeError: 'module' object has no attribute 'wait'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/Applications/renpy-6.16.5-sdk/renpy/execution.py", line 288, in run
+    node.execute()
+  File "/Applications/renpy-6.16.5-sdk/renpy/ast.py", line 720, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Applications/renpy-6.16.5-sdk/renpy/python.py", line 1308, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 85, in <module>
+    $ renpy.wait(1.0)
+AttributeError: 'module' object has no attribute 'wait'
+
+Darwin-13.0.0-x86_64-i386-64bit
+Ren'Py 6.16.5.525
+On the Air 0.0
